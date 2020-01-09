@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1330.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.Main_MenuController">
+    <stylesheets>
+        <URL value="@main_menu.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.5, 0.5" layoutX="50.0" layoutY="58.0" orientation="VERTICAL" prefHeight="551.0" prefWidth="630.0">
+         <items>
+            <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="623.0" style="-fx-background-color: #B2F5F2;" text="Hospital Management System" textFill="#037907">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="623.0" style="-fx-background-color: #fffff;" text="Login As:" textFill="#037907">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="435.0" prefWidth="639.0">
+               <children>
+                  <Button layoutX="45.0" layoutY="140.0" mnemonicParsing="false" onAction="#Administration" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: #5CC5D3;" text="Adminstration" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="45.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Admin-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="247.0" layoutY="139.0" mnemonicParsing="false" onAction="#Receptionist" prefHeight="37.0" prefWidth="154.0" style="-fx-background-color: #5CC5D3;" text="Receptionist" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="154.0" fitWidth="175.0" layoutX="247.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Reciption.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="467.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/free-doctor-clipart-3.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="454.0" layoutY="140.0" mnemonicParsing="false" onAction="#Doctor" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: #5CC5D3;" text="Doctor" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="48.0" layoutY="364.0" mnemonicParsing="false" onAction="#Patient" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: #5CC5D3;" text="Patient" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="143.0" fitWidth="154.0" layoutX="47.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Patient.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="259.0" layoutY="362.0" mnemonicParsing="false" onAction="#Nurse" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: #5CC5D3;" text="Nurse" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="143.0" fitWidth="154.0" layoutX="255.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Nurse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="143.0" fitWidth="154.0" layoutX="459.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/People-Pharmacist-Male-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="459.0" layoutY="358.0" mnemonicParsing="false" onAction="#Pharmacy" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: #5CC5D3;" text="Pharmacy" textFill="#f8efef">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

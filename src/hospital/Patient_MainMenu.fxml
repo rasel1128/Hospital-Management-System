@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.Patient_MainMenuController">
+   <children>
+      <Label layoutX="447.0" layoutY="39.0" text="Hospital Management System" textAlignment="CENTER" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView layoutX="768.0" layoutY="117.0" prefHeight="236.0" prefWidth="482.0">
+         <columns>
+            <TableColumn prefWidth="83.0" text="Doctor ID" />
+            <TableColumn prefWidth="130.0" text="Doctor Name" />
+            <TableColumn prefWidth="137.0" text="Qualification" />
+            <TableColumn prefWidth="130.0" text="Specialist" />
+         </columns>
+      </TableView>
+      <Button layoutX="565.0" layoutY="269.0" mnemonicParsing="false" onAction="#insert" prefHeight="33.0" prefWidth="169.0" style="-fx-background-color: 0DC4DA;" text="Insert" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="221.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: 0DC4DA;" text="Update" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="663.0" layoutY="221.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: 0DC4DA;" text="Delete" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="314.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: 0DC4DA;" text="Back" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="670.0" layoutY="314.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: 0DC4DA;" text="Home" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="appoinment" layoutX="246.0" layoutY="316.0" prefHeight="33.0" prefWidth="272.0">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="90.0" layoutY="320.0" text="Appoinment" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doctor_name" layoutX="245.0" layoutY="272.0" prefHeight="33.0" prefWidth="272.0">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="88.0" layoutY="276.0" text="Doctor Name" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="232.0" text="Doctor ID" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doctor_id" layoutX="242.0" layoutY="228.0" prefHeight="33.0" prefWidth="272.0">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="patient_name" layoutX="241.0" layoutY="184.0" prefHeight="33.0" prefWidth="272.0">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="92.0" layoutY="188.0" text="Patient Name" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="145.0" text="Patient ID" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patient_id" layoutX="241.0" layoutY="141.0" prefHeight="33.0" prefWidth="272.0">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="768.0" layoutY="87.0" text="Available Doctor List" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="90.0" layoutY="382.0" prefHeight="303.0" prefWidth="614.0">
+         <columns>
+            <TableColumn prefWidth="83.0" text="Patient ID" />
+            <TableColumn prefWidth="130.0" text="Patient Name" />
+            <TableColumn prefWidth="137.0" text="Doctor ID" />
+            <TableColumn prefWidth="130.0" text="Doctor Name" />
+            <TableColumn prefWidth="130.0" text="Appoinment" />
+         </columns>
+      </TableView>
+      <Label fx:id="msg" layoutX="768.0" layoutY="374.0" prefHeight="33.0" prefWidth="323.0" textFill="#0974c6">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

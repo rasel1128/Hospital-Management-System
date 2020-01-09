@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1330.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hospital.ReceptionistController">
+   <children>
+      <Label layoutX="614.0" layoutY="138.0" text="Receptionist" textAlignment="CENTER" textFill="#3905bc" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="93.0" text="Hospital Management System" textAlignment="CENTER" textFill="#3905bc">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="496.0" layoutY="234.0" mnemonicParsing="false" onAction="#save_patient_details" prefHeight="33.0" prefWidth="367.0" style="-fx-background-color: 0DC4DA;" text="Save Patient Details" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="497.0" layoutY="299.0" mnemonicParsing="false" onAction="#payment_details" prefHeight="33.0" prefWidth="367.0" style="-fx-background-color: 0DC4DA;" text="Payment  Details" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="499.0" layoutY="368.0" mnemonicParsing="false" onAction="#important_number" prefHeight="33.0" prefWidth="367.0" style="-fx-background-color: 0DC4DA;" text="Important Numbers" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="499.0" layoutY="431.0" mnemonicParsing="false" onAction="#bill" prefHeight="33.0" prefWidth="367.0" style="-fx-background-color: 0DC4DA;" text="Bill" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="502.0" layoutY="493.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="367.0" style="-fx-background-color: 0DC4DA;" text="Back" textFill="#4c0cc3">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

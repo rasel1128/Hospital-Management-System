@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.AddDoctorController">
+   <children>
+      <SplitPane layoutX="-1.0" layoutY="1.0" orientation="VERTICAL" prefHeight="353.0" prefWidth="1330.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="296.0" prefWidth="353.0">
+               <children>
+                  <Label layoutX="125.0" layoutY="98.0" text="Doctor ID" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="418.0" layoutY="98.0" text="First Name" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="420.0" layoutY="148.0" text="Last Name" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="826.0" layoutY="149.0" text="Gender" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="826.0" layoutY="96.0" text="Qualifiaction" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="418.0" layoutY="196.0" text="Specialist" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="411.0" layoutY="284.0" text="Contact No" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="415.0" layoutY="239.0" text="E-mail ID:" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="823.0" layoutY="192.0" text="Age" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="823.0" layoutY="239.0" text="Present Address" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="820.0" layoutY="284.0" text="Permanent Address" textFill="#3905bc">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="177.0" layoutY="234.0" mnemonicParsing="false" onAction="#insert" prefHeight="33.0" prefWidth="169.0" style="-fx-background-color: 0DC4DA;" text="Insert" textFill="#4c0cc3">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="177.0" layoutY="186.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: 0DC4DA;" text="Update" textFill="#4c0cc3">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="275.0" layoutY="186.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: 0DC4DA;" text="Delete" textFill="#4c0cc3">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="177.0" layoutY="279.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: 0DC4DA;" text="Back" textFill="#4c0cc3">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="282.0" layoutY="279.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: 0DC4DA;" text="Home" textFill="#4c0cc3">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="doctor_id" layoutX="221.0" layoutY="92.0" prefHeight="33.0" prefWidth="155.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="first_name" layoutX="550.0" layoutY="93.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="last_name" layoutX="550.0" layoutY="143.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="email" layoutX="550.0" layoutY="234.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="specialist" layoutX="550.0" layoutY="186.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="contact" layoutX="550.0" layoutY="281.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="qualification" layoutX="985.0" layoutY="92.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="present_address" layoutX="985.0" layoutY="233.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="age" layoutX="985.0" layoutY="185.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="gender" layoutX="985.0" layoutY="142.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="permanent_address" layoutX="985.0" layoutY="280.0" prefHeight="33.0" prefWidth="244.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="627.0" layoutY="33.0" text="Doctor Details" textAlignment="CENTER" textFill="#3905bc" underline="true">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="msg" layoutX="76.0" layoutY="141.0" prefHeight="33.0" prefWidth="323.0" textFill="#0974c6">
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane layoutX="-2.0" layoutY="354.0" minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="1330.0">
+         <children>
+            <TableView fx:id="doctor_details_table" layoutX="3.0" prefHeight="293.0" prefWidth="1328.0">
+              <columns>
+                <TableColumn fx:id="tdoctor_id" prefWidth="88.0" text="Doctor ID" />
+                <TableColumn fx:id="tfirst_name" prefWidth="132.0" text="First _Name" />
+                  <TableColumn fx:id="tlast_name" prefWidth="132.0" text="Last _Name" />
+                  <TableColumn fx:id="tspecialist" prefWidth="132.0" text="Specialist" />
+                  <TableColumn fx:id="temail" prefWidth="132.0" text="Email" />
+                  <TableColumn fx:id="tcontact" prefWidth="132.0" text="Contact" />
+                  <TableColumn fx:id="tqualification" prefWidth="132.0" text="Qualification" />
+                  <TableColumn fx:id="tgender" prefWidth="91.0" text="Gender" />
+                  <TableColumn fx:id="tage" prefWidth="71.0" text="Age" />
+                  <TableColumn fx:id="tpresent_address" prefWidth="136.0" text="Present Address" />
+                  <TableColumn fx:id="tpermanent_address" prefWidth="149.0" text="Permanent Address" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

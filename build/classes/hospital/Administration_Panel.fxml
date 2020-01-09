@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1330.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.Administration_PanelController">
+    <stylesheets>
+        <URL value="@administration_panel.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="450.0" layoutY="473.0" mnemonicParsing="false" onAction="#doctor" prefHeight="91.0" prefWidth="185.0" text="Doctor">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button layoutX="848.0" layoutY="476.0" mnemonicParsing="false" onAction="#nurse" prefHeight="91.0" prefWidth="185.0" text="Nurse">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
